@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">OnboardingExample</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="manage_time">MANAGE TIME!</string>
+    <string name="manage_time_description">Use all the features\nof the app to keep track\nof time and be more efficient</string>
+    <string name="next">next</string>
+    <string name="message_description">use the built-in messenger\nto quickly exchange\ninformation</string>
+    <string name="prev">prev</string>
+    <string name="message">STAY IN TOUCH!</string>
+    <string name="relax">RELAX!</string>
+    <string name="relax_description">let our service do the work\nfor you</string>
+</resources>

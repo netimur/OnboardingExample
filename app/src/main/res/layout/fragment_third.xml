@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#007888"
+    tools:context=".onboard.screens.ThirdFragment">
+
+    <ImageView
+        android:id="@+id/illustration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:src="@drawable/relax"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/header" />
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="@string/relax"
+        android:textAppearance="@style/OnBoardingHeadlineTextAppearance"
+        android:textSize="60sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/relax_description"
+        android:textAppearance="@style/AppTextAppearance"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/header" />
+
+
+    <TextView
+        android:id="@+id/prev_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:text="@string/prev"
+        android:textAppearance="@style/AppTextAppearance"
+        app:layout_constraintBottom_toBottomOf="@id/prev_arrow"
+        app:layout_constraintStart_toEndOf="@id/prev_arrow"
+        app:layout_constraintTop_toTopOf="@id/prev_arrow" />
+
+    <ImageView
+        android:id="@+id/prev_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="40dp"
+        android:src="@drawable/back_arrow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/ButtonTextAppearance"
+        android:layout_marginStart="40dp"
+        app:layout_constraintBottom_toBottomOf="@id/prev_arrow"
+        app:layout_constraintStart_toEndOf="@id/prev_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="40dp"
+        app:backgroundTint="@color/white"
+        android:text="to the app"
+        android:paddingHorizontal="40dp"
+        app:icon="@drawable/rocket_launch"
+        app:iconTint="@color/black"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toTopOf="@id/prev_arrow"
+        app:shapeAppearance="@style/ButtonShapeAppearance" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
